@@ -1,0 +1,40 @@
+.header {
+    background-image: url('https://images.unsplash.com/photo-1509565840034-3c385bbe6451?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80');
+    height: 450px;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    line-height: 40px;
+    color: black;
+}
+.welcome {
+    top: 50%;
+    left: 38%;
+    text-align: center;
+    color:white;
+}
+body {
+    text-align: center;
+    background-color: #433520;
+    color: #00917c;
+    background-position: center;
+    
+}
+/*.container-fluid{
+  
+}*/
+.row {
+    padding: 40px;
+    background-color: #433520;
+    color: #00917c;
+}
+h3 {
+    font-family: monospace;
+    font-size: 50px;
+}
+h3:hover {
+    color: yellow;
+}
+footer{
+    background-color: black;
+}
+

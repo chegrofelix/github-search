@@ -1,0 +1,61 @@
+<body>
+
+
+    <div class="header">
+
+        <h4>WELCOME TO GITHUB SEARCH PLATFORM
+            WHERE YOU CAN SEARCH FOR GITHUB USERS AND SEE THEIR REPOSITORIES</h4>
+        <p>Amazing people build amazing softwares</p>
+        
+            
+                <img style="border-radius: 50px; width: 300px;" src="{{user.avatar_url}}" alt="">
+
+            
+        </div>
+    
+
+
+       
+
+
+        <h3>My Profile</h3>
+        <p *ngIf='user'>
+            Name: {{user.name}} <br>
+            Username: {{user.login}}
+        </p>
+    
+
+
+     <h3>My Repositories</h3>
+
+    <div class="container" style="text-align: center;">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let repo of repository">
+                <div class="card mt-4">
+                    <p class="text-center pt-4 para" appUppercase>
+                        {{repo.name|uppercase}} <br>
+                        Created {{ repo.created_at|dateCount}}
+                    </p>
+                    <hr>
+                    <p>
+                        {{repo.description}}
+                    </p>
+
+                    <p>
+                        {{repo.language}}
+                    </p>
+
+                    <div class="card-footer text-center">
+                        <a href="{{ repo.html_url }}" class="btn btn-secondary btn-sm" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      <h3>contacts</h3> 
+      <p>phone: +254741906738</p>
+      <p>email: chegerofelix@gmail.com</p>
+      <span>&#169; 2021</span>
+    </footer>
+</body>
